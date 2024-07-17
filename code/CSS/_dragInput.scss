@@ -1,0 +1,32 @@
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+
+.dragInput{
+	border-radius: 25px;
+	box-shadow: inset 0px 0px 9px 0px grey;		
+	text-align:center;
+}
+
+/* remove spinner buttons: */
+.dragInput -webkit-outer-spin-button, .dragInput -webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.dragInput{
+	-moz-appearance: textfield;
+}
+
+
+.selectMode{
+
+}	
+
+.dragMode{
+	cursor: col-resize;
+
+	user-select: none;
+}

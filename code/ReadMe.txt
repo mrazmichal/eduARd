@@ -1,0 +1,1 @@
+Files in this folder and subfolders are an original work of Michal Mráz unless stated otherwise in a file header or ReadMe file. Parts of code that were taken from other authors have a comment saying from where the code was taken.

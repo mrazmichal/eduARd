@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">	
+	<head>
+		<!-- This file is an original work of Michal Mráz -->        
+    </head>
+	<Scene>
+	
+		<Shape>
+			<Appearance>
+				<Material DEF="MA_Gray_emissive" emissiveColor="0.29 0.29 0.29"></Material>
+			</Appearance>
+			<LineSet>
+				<Coordinate DEF="COORD" point="-8 0 8, 8 0 8, -8 0 7, 8 0 7, -8 0 6, 8 0 6, -8 0 5, 8 0 5, -8 0 4, 8 0 4, -8 0 3, 8 0 3, -8 0 2, 8 0 2, -8 0 1, 8 0 1, -8 0 -1, 8 0 -1, -8 0 -2, 8 0 -2, -8 0 -3, 8 0 -3, -8 0 -4, 8 0 -4, -8 0 -5, 8 0 -5, -8 0 -6, 8 0 -6, -8 0 -7, 8 0 -7, -8 0 -8, 8 0 -8,
+				-8 0 -8, -8 0 8, -7 0 -8, -7 0 8, -6 0 -8, -6 0 8, -5 0 -8, -5 0 8, -4 0 -8, -4 0 8, -3 0 -8, -3 0 8, -2 0 -8, -2 0 8, -1 0 -8, -1 0 8, 1 0 -8, 1 0 8, 2 0 -8, 2 0 8, 3 0 -8, 3 0 8, 4 0 -8, 4 0 8, 5 0 -8, 5 0 8, 6 0 -8, 6 0 8, 7 0 -8, 7 0 8, 8 0 -8, 8 0 8"></Coordinate>	  
+			</LineSet>
+		</Shape>
+
+		<Shape>
+			<Appearance>
+				<Material DEF="MA_Red_emissive" emissiveColor="1.000 0.000 0.000"></Material>
+			</Appearance>
+			<LineSet>
+				<Coordinate DEF="COORD" point="-8 0 0, 8 0 0"></Coordinate>
+			</LineSet>
+		</Shape>
+
+		<Shape>
+			<Appearance>
+				<Material DEF="MA_Blue_emissive" emissiveColor="0.016 0.549 0.984"></Material>
+			</Appearance>
+			<LineSet>
+				<Coordinate DEF="COORD" point="0 0 8, 0 0 -8"></Coordinate>
+			</LineSet>
+		</Shape>
+		
+	</Scene>
+</X3D>

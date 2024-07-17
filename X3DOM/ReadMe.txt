@@ -1,0 +1,1 @@
+This folder contains a development release of X3DOM downloaded from https://www.x3dom.org/nodes/

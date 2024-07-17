@@ -1,0 +1,189 @@
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+
+h1 {
+  margin:0px;
+  margin-left: 10px;
+  font-weight: 550;
+}
+
+h3{
+  margin:0px;
+}
+
+hr {
+  margin: 0px;
+  border-top: 3px solid rgb(155, 154, 154);
+}
+
+html, body, #bodyContent, #main, #center, #x3dWrapper, #x3d {
+  max-height: 100%;
+  min-height: 0;
+  max-width: 100%;
+  min-width: 0;
+}
+
+body{
+  margin:0px;
+  padding:0px;
+}
+
+#bodyContent{
+  padding:7px;
+  padding-bottom: 0px;
+}
+
+#center, #south, #northeast, #southeast {
+  background-color: white;    
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#south, #northeast, #southeast {
+  padding: 5px;
+}
+
+#northeast, #southeast {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  min-width: 700px;
+  min-height: 500px;
+  background: $background;
+  margin: 0;
+}
+
+body, #bodyContent {   
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 7px; //maybe not supported yet by browsers
+}
+
+#center {
+  min-height: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+}
+
+#east {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  max-width: 350px;
+  max-height: 100%;
+  gap: 7px;
+}
+
+#south {
+  // display: none;
+  // width: 100%
+}
+
+#footer{
+  padding: 5px;
+  font-size: 13;
+}
+
+#x3dWrapper {
+  width: 100%;
+  flex: 1;
+}
+
+#x3d {
+  width: 100%;
+  border-style: none;
+}
+
+#outlinerAndPropertiesWrapper{
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+// make gaps between items
+.verticalItems{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.verticalItems_smallGaps{
+  display:flex;
+  flex-direction:column;
+  gap: 5px;
+}
+
+.verticalItems_bigGaps{
+  display:flex;
+  flex-direction:column;
+  gap: 20px;
+}
+
+.horizontalItems {
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.horizontalItems_spaceBetween {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: flex-start; // so that items are not automatically stretched to be as tall as the tallest item
+  gap: 10px;
+}
+
+.horizontalItems_spaceEvenly {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  align-items: flex-start; // so that items are not automatically stretched to be as tall as the tallest item
+  gap: 10px;
+}
+
+.horizontalItems_onLeft {
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+
+.myNumberInput{
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 9px 0px grey;
+  text-align:center;
+}
+
+#loadingCog{
+  display:block;
+  color:white;
+  position:absolute;
+  left:30px;
+  top:100px;
+  z-index:1
+}

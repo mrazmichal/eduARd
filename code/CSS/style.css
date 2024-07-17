@@ -1,0 +1,612 @@
+@charset "UTF-8";
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * Project:         EduARd project at FEE CTU in Prague.
+ **/
+/**
+ * Original author	Anastasia Surikova
+ * Modified by:     Michal Mráz
+ * Created:   		29.12.2020
+ * Project:         EduARd project at FEE CTU in Prague.
+ **/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+body, input, textarea, button {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.btn {
+  all: unset;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  -webkit-transition: background-color .15s ease-in-out;
+  transition: background-color .15s ease-in-out;
+}
+
+.btn:disabled {
+  color: #d4d1d1;
+  background-color: #ece9e9;
+  cursor: initial;
+}
+
+.btn:disabled:hover {
+  background-color: #ece9e9;
+}
+
+.btn-primary {
+  background-color: #12355b;
+}
+
+.btn-primary:hover {
+  background-color: #0a1c30;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #bd2130;
+}
+
+.btn-dark {
+  background-color: #343a40;
+}
+
+.btn-dark:hover {
+  background-color: #1d2124;
+}
+
+.btn-advanced {
+  background-color: #db9512;
+}
+
+.btn-advanced:hover {
+  background-color: #ac750e;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+}
+
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+h1 {
+  margin: 0px;
+  margin-left: 10px;
+  font-weight: 550;
+}
+
+h3 {
+  margin: 0px;
+}
+
+hr {
+  margin: 0px;
+  border-top: 3px solid #9b9a9a;
+}
+
+html, body, #bodyContent, #main, #center, #x3dWrapper, #x3d {
+  max-height: 100%;
+  min-height: 0;
+  max-width: 100%;
+  min-width: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#bodyContent {
+  padding: 7px;
+  padding-bottom: 0px;
+}
+
+#center, #south, #northeast, #southeast {
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#south, #northeast, #southeast {
+  padding: 5px;
+}
+
+#northeast, #southeast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  min-width: 700px;
+  min-height: 500px;
+  background: #ebf2fa;
+  margin: 0;
+}
+
+body, #bodyContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 7px;
+}
+
+#center {
+  min-height: 300px;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#east {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 350px;
+  max-width: 350px;
+  max-height: 100%;
+  gap: 7px;
+}
+
+#footer {
+  padding: 5px;
+  font-size: 13;
+}
+
+#x3dWrapper {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#x3d {
+  width: 100%;
+  border-style: none;
+}
+
+#outlinerAndPropertiesWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.verticalItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.verticalItems_smallGaps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.verticalItems_bigGaps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.horizontalItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+}
+
+.horizontalItems_spaceBetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.horizontalItems_spaceEvenly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.horizontalItems_onLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.myNumberInput {
+  border-radius: 25px;
+  -webkit-box-shadow: inset 0px 0px 9px 0px grey;
+          box-shadow: inset 0px 0px 9px 0px grey;
+  text-align: center;
+}
+
+#loadingCog {
+  display: block;
+  color: white;
+  position: absolute;
+  left: 30px;
+  top: 100px;
+  z-index: 1;
+}
+
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 3px;
+  margin-top: 10px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 392px;
+  position: absolute;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#googleMap1 {
+  width: 630px;
+  height: 350px;
+  -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  margin: 6px;
+}
+
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+.overlay {
+  /* https://www.w3schools.com/howto/howto_css_overlay.asp */
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.overlayContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overlayWindow {
+  background: white;
+  padding: 10px;
+}
+
+/* probably only used for Annotation */
+textarea {
+  resize: none;
+}
+
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+#outlinerItemProperties {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: auto;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+}
+
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+#triggerOutliner, #actionOutliner {
+  min-width: 350px;
+  max-width: 450px;
+  min-height: 300px;
+  max-height: 650px;
+}
+
+.outliner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 500px;
+  max-height: 650px;
+  overflow: auto;
+  background-color: #ced4da;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -moz-user-select: -moz-none;
+}
+
+.outliner:focus {
+  outline: 3px dashed orange;
+}
+
+.treeElem {
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  white-space: nowrap;
+  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+
+.outliner > .treeElem:first-child {
+  margin-top: 5px;
+}
+
+.selected {
+  background-color: yellow;
+}
+
+.forbidden {
+  color: #9e9d9d;
+}
+
+.hidden {
+  display: none;
+  background-color: green;
+}
+
+.outliner .itemsWrapper {
+  overflow: visible;
+}
+
+.outliner .itemIcon {
+  margin-left: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.outliner .iconWrapper {
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.outliner .itemText {
+  margin-left: 4px;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.collapseButton, .expandButton, .emptyButton {
+  padding-left: 6px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+.collapseButton, .expandButton {
+  cursor: pointer;
+}
+
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+.dragInput {
+  border-radius: 25px;
+  -webkit-box-shadow: inset 0px 0px 9px 0px grey;
+          box-shadow: inset 0px 0px 9px 0px grey;
+  text-align: center;
+}
+
+/* remove spinner buttons: */
+.dragInput -webkit-outer-spin-button, .dragInput -webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dragInput {
+  -moz-appearance: textfield;
+}
+
+.dragMode {
+  cursor: col-resize;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=style.css.map */

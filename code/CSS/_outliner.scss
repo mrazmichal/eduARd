@@ -1,0 +1,92 @@
+/**
+ * Original author	Michal Mráz
+ * Created:   		29.12.2020
+ * 
+ * Created as part of the EduARd project at FEE CTU in Prague
+ **/
+
+#triggerOutliner, #actionOutliner{
+    min-width: 350px;
+    max-width: 450px;
+    min-height: 300px;
+    max-height: 650px;
+}
+
+.outliner{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 500px;
+    max-height: 650px;
+    overflow: auto;
+    background-color: $background2;
+
+    user-select: none;
+    -moz-user-select: -moz-none;
+}
+
+.outliner:focus {
+    outline: 3px dashed orange;
+}
+
+.treeElem{
+    margin:0px;
+    padding:0px;
+    display: flex;
+    overflow: visible;
+    white-space: nowrap;
+    color:black;
+    user-select: none;
+    cursor: default;
+}
+
+.outliner > .treeElem:first-child {
+    margin-top: 5px;
+}
+
+.selected{
+    background-color: yellow;
+}
+
+.forbidden{
+    color:rgb(158, 157, 157);
+}
+
+.hidden{
+    display:none;
+    background-color: green;
+}
+
+.outliner .itemsWrapper{
+    overflow: visible;
+}
+
+.outliner .itemIcon{
+    margin-left:1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outliner .iconWrapper{
+    padding-left:3px;
+    padding-top:2px;
+    // width:23px;
+}
+
+
+.outliner .itemText{
+    margin-left:4px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.collapseButton, .expandButton, .emptyButton{
+    padding-left: 6px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+}
+
+.collapseButton, .expandButton{
+    cursor:pointer;
+}

@@ -1,0 +1,72 @@
+{
+	"triggers": {
+		"Is in proximity": {
+			"_comment": "the parameters here have DEFAULT value assigned",
+			"parameters": {
+				"reactivity radius (meters)": 5
+			},
+			"compatibleObjectTypes": [
+				"Locator", "Model", "ModelPart"
+			]
+		},
+		"Is looking at": {
+			"parameters": {
+				"reactive field of view (degrees)": 60
+			},
+			"compatibleObjectTypes": [
+				"Locator", "Model", "ModelPart"
+			]
+		},
+		"Pressed button": {
+			"parameters": {
+			},
+			"compatibleObjectTypes": [
+				"Button"
+			]
+		}
+	},
+	"actions": {
+		"Show Video": {
+			"parameters": {
+			},
+			"compatibleObjectTypes": [
+				"Video"
+			]	
+		},
+		"Show Picture": {
+			"parameters": {
+			},
+			"compatibleObjectTypes": [
+				"Picture"
+			]	
+		},
+		"Show Annotation": {
+			"parameters": {
+			},
+			"compatibleObjectTypes": [
+				"Annotation"
+			]	
+		},
+		"Make invisible": {
+			"parameters": {
+			},
+			"compatibleObjectTypes": [
+				"Model", "ModelPart"
+			]	
+		},
+		"Play MyObject_Animation": {
+			"parameters": {
+			},
+			"compatibleObjectTypes": [
+				"MyObject_Animation"
+			]	
+		},
+		"Stop MyObject_Animation": {
+			"parameters": {
+			},
+			"compatibleObjectTypes": [
+				"MyObject_Animation"
+			]	
+		}
+	}
+}

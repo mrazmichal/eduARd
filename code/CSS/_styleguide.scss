@@ -1,0 +1,108 @@
+/**
+ * Original author	Anastasia Surikova
+ * Modified by:     Michal Mráz
+ * Created:   		29.12.2020
+ * Project:         EduARd project at FEE CTU in Prague.
+ **/
+
+$background: #ebf2fa;
+$primary: #12355b;
+$success: #28a745;
+$danger: #dc3545;
+$dark: #343a40;
+$text-color: #212529;
+
+$advanced: rgb(219, 149, 18);
+$secondary: #6c757d;
+$background2: #ced4da;
+$disabled: #ece9e9;
+$textDisabled: rgb(212, 209, 209);
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap');
+
+body, input, textarea, button {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.btn {
+  all: unset;
+
+  // Common styles for all buttons
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out;
+
+  &:disabled{
+    color: $textDisabled;
+    background-color: $disabled;
+    cursor: initial;
+    &:hover {
+      background-color: $disabled;
+    }
+  }
+
+  // Primary button
+  &-primary {
+      background-color: $primary;
+
+      &:hover {
+          background-color: darken($primary, 10%);
+      }
+  }
+
+  // Success button
+  &-success {
+      background-color: $success;
+
+      &:hover {
+          background-color: darken($success, 10%);
+      }
+  }
+
+  // Danger button
+  &-danger {
+      background-color: $danger;
+
+      &:hover {
+          background-color: darken($danger, 10%);
+      }
+  }
+
+  // Dark button
+  &-dark {
+      background-color: $dark;
+
+      &:hover {
+          background-color: darken($dark, 10%);
+      }
+  }
+
+  // Advanced button
+  &-advanced {
+      background-color: $advanced;
+
+      &:hover {
+          background-color: darken($advanced, 10%);
+      }
+  }
+
+  // Secondary button
+  &-secondary {
+    background-color: $secondary;
+
+    &:hover {
+        background-color: darken($secondary, 10%);
+    }
+  }
+
+}
+                      
