@@ -2,8 +2,8 @@ Web application for authoring of AR content. The AR scenes can be anchored eithe
 
 The Google API key was removed from file googleMapsScripts.js
 
-The app was created as a part of another app, so it is not functional if only on its own.
+The app was created as a part of another app.
 
-![image](https://github.com/user-attachments/assets/4d320f6e-36d5-4899-bfd8-a391fb3849d6)
+<img src="https://github.com/user-attachments/assets/4d320f6e-36d5-4899-bfd8-a391fb3849d6" width="850" />
 
 
