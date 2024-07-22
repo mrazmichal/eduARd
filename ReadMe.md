@@ -2,6 +2,9 @@ Web application for authoring of AR content. The AR scenes can be anchored eithe
 
 The Google API key was removed from file googleMapsScripts.js. The app was created as a part of another app.
 
+Bachelor thesis link:
+https://dspace.cvut.cz/handle/10467/92885
+
 <img src="https://github.com/user-attachments/assets/4d320f6e-36d5-4899-bfd8-a391fb3849d6" width="850" />
 
 
